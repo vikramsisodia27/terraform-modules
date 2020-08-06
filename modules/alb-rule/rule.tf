@@ -23,9 +23,6 @@ resource "aws_lb_listener_rule" "alb_rule" {
     target_group_arn = var.TARGET_GROUP_ARN
   }
 
-  condition {
-    field  = var.CONDITION_FIELD
-    values = var.CONDITION_VALUES
-  }
+  
 }
 
