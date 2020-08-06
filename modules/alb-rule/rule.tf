@@ -21,8 +21,6 @@ resource "aws_lb_listener_rule" "alb_rule" {
   action {
     type             = "forward"
     target_group_arn = var.TARGET_GROUP_ARN
-  }
-
-  
+  } 
 }
 
